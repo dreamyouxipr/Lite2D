@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{34776152-7D86-4CE0-9EB3-D72646E4ECF6}</ProjectGuid>
+    <RootNamespace>Lite2D</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>E:\Users\Buu\Documents\projects\Lite2D\Lite2D\3party\freetype2;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>E:\Users\Buu\Documents\projects\Lite2D\Lite2D\3party\freetype2;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>LITE2D;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>false</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;libpng.lib;libjpeg.lib;libzlib.lib;freetype250.lib;fmodex_vc.lib;libcurl_imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>LITE2D;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glfw3.lib;libpng.lib;libjpeg.lib;libzlib.lib;freetype250.lib;libcurl_imp.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="2d\Action.cpp" />
+    <ClCompile Include="2d\ActionMgr.cpp" />
+    <ClCompile Include="2d\Animation.cpp" />
+    <ClCompile Include="2d\AnimationCache.cpp" />
+    <ClCompile Include="2d\CallFunc.cpp" />
+    <ClCompile Include="2d\FadeIn.cpp" />
+    <ClCompile Include="2d\FadeOut.cpp" />
+    <ClCompile Include="2d\MoveBy.cpp" />
+    <ClCompile Include="2d\MoveTo.cpp" />
+    <ClCompile Include="2d\RotationBy.cpp" />
+    <ClCompile Include="2d\RotationTo.cpp" />
+    <ClCompile Include="2d\ScaleBy.cpp" />
+    <ClCompile Include="2d\ScaleTo.cpp" />
+    <ClCompile Include="2d\Scene.cpp" />
+    <ClCompile Include="2d\Sequence.cpp" />
+    <ClCompile Include="2d\Sprite.cpp" />
+    <ClCompile Include="3party\tinyxml\tinystr.cpp" />
+    <ClCompile Include="3party\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="3party\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="3party\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="3party\xxhash\xxhash.c" />
+    <ClCompile Include="audio\AudioEngine.cpp" />
+    <ClCompile Include="base\Application.cpp" />
+    <ClCompile Include="base\AutoReleeasePool.cpp" />
+    <ClCompile Include="base\Director.cpp" />
+    <ClCompile Include="base\EventDispatcher.cpp" />
+    <ClCompile Include="base\GLView.cpp" />
+    <ClCompile Include="base\Node.cpp" />
+    <ClCompile Include="base\PlayerSave.cpp" />
+    <ClCompile Include="base\Ref.cpp" />
+    <ClCompile Include="base\Scheduler.cpp" />
+    <ClCompile Include="base\Vec2.cpp" />
+    <ClCompile Include="Lite2D.cpp" />
+    <ClCompile Include="math\Math.cpp" />
+    <ClCompile Include="network\HttpClient.cpp" />
+    <ClCompile Include="network\HttpRequest.cpp" />
+    <ClCompile Include="network\HttpRespone.cpp" />
+    <ClCompile Include="render\Image.cpp" />
+    <ClCompile Include="render\RenderCmd.cpp" />
+    <ClCompile Include="render\RenderCmdQueue.cpp" />
+    <ClCompile Include="render\Texture2D.cpp" />
+    <ClCompile Include="render\TextureCache.cpp" />
+    <ClCompile Include="ui\Button.cpp" />
+    <ClCompile Include="ui\Text.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2d\Action.h" />
+    <ClInclude Include="2d\ActionMgr.h" />
+    <ClInclude Include="2d\Animation.h" />
+    <ClInclude Include="2d\AnimationCache.h" />
+    <ClInclude Include="2d\CallFunc.h" />
+    <ClInclude Include="2d\FadeIn.h" />
+    <ClInclude Include="2d\FadeOut.h" />
+    <ClInclude Include="2d\MoveBy.h" />
+    <ClInclude Include="2d\MoveTo.h" />
+    <ClInclude Include="2d\RotationBy.h" />
+    <ClInclude Include="2d\RotationTo.h" />
+    <ClInclude Include="2d\ScaleBy.h" />
+    <ClInclude Include="2d\ScaleTo.h" />
+    <ClInclude Include="2d\Scene.h" />
+    <ClInclude Include="2d\Sequence.h" />
+    <ClInclude Include="2d\Sprite.h" />
+    <ClInclude Include="3party\3party.h" />
+    <ClInclude Include="3party\freetype2\freetype\freetype.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftadvanc.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftautoh.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftbbox.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftbdf.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftbitmap.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftbzip2.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftcache.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftcffdrv.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftchapters.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftcid.h" />
+    <ClInclude Include="3party\freetype2\freetype\fterrdef.h" />
+    <ClInclude Include="3party\freetype2\freetype\fterrors.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftgasp.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftglyph.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftgxval.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftgzip.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftimage.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftincrem.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftlcdfil.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftlist.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftlzw.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftmac.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftmm.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftmodapi.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftmoderr.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftotval.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftoutln.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftpfr.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftrender.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftsizes.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftsnames.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftstroke.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftsynth.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftsystem.h" />
+    <ClInclude Include="3party\freetype2\freetype\fttrigon.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftttdrv.h" />
+    <ClInclude Include="3party\freetype2\freetype\fttypes.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftwinfnt.h" />
+    <ClInclude Include="3party\freetype2\freetype\ftxf86.h" />
+    <ClInclude Include="3party\freetype2\freetype\t1tables.h" />
+    <ClInclude Include="3party\freetype2\freetype\ttnameid.h" />
+    <ClInclude Include="3party\freetype2\freetype\tttables.h" />
+    <ClInclude Include="3party\freetype2\freetype\tttags.h" />
+    <ClInclude Include="3party\freetype2\freetype\ttunpat.h" />
+    <ClInclude Include="3party\freetype2\ft2build.h" />
+    <ClInclude Include="3party\jpeg\jconfig.h" />
+    <ClInclude Include="3party\jpeg\jmorecfg.h" />
+    <ClInclude Include="3party\jpeg\jpeglib.h" />
+    <ClInclude Include="3party\png\png.h" />
+    <ClInclude Include="3party\png\pngconf.h" />
+    <ClInclude Include="3party\png\zconf.h" />
+    <ClInclude Include="3party\png\zlib.h" />
+    <ClInclude Include="3party\tinyxml\tinystr.h" />
+    <ClInclude Include="3party\tinyxml\tinyxml.h" />
+    <ClInclude Include="3party\xxhash\xxhash.h" />
+    <ClInclude Include="audio\AudioEngine.h" />
+    <ClInclude Include="base\Application.h" />
+    <ClInclude Include="base\AutoReleeasePool.h" />
+    <ClInclude Include="base\Director.h" />
+    <ClInclude Include="base\EventDispatcher.h" />
+    <ClInclude Include="base\GLView.h" />
+    <ClInclude Include="base\Node.h" />
+    <ClInclude Include="base\PlayerSave.h" />
+    <ClInclude Include="base\Ref.h" />
+    <ClInclude Include="base\Scheduler.h" />
+    <ClInclude Include="base\Vec2.h" />
+    <ClInclude Include="Lite2D.h" />
+    <ClInclude Include="Macros.h" />
+    <ClInclude Include="math\Math.h" />
+    <ClInclude Include="network\HttpClient.h" />
+    <ClInclude Include="network\HttpRequest.h" />
+    <ClInclude Include="network\HttpRespone.h" />
+    <ClInclude Include="render\Image.h" />
+    <ClInclude Include="render\RenderCmd.h" />
+    <ClInclude Include="render\RenderCmdQueue.h" />
+    <ClInclude Include="render\Texture2D.h" />
+    <ClInclude Include="render\TextureCache.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ui\Button.h" />
+    <ClInclude Include="ui\Text.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libjpeg.lib" />
+    <Library Include="libpng.lib" />
+    <Library Include="libzlib.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="3party\png\zlib1.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Lite2D.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

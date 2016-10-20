@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{076d6196-5122-4fba-86df-a099f264c5e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{da87d879-8d32-43fa-ae4a-16e29e4ece7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2d">
+      <UniqueIdentifier>{13e4ec14-e0fa-440b-b241-221c41638b62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render">
+      <UniqueIdentifier>{8e368498-5dd0-40bb-b630-50832dd9cb6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{303f2068-1011-49a6-9011-e8f079ba11d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{90c5a81c-623e-44a5-aee2-c0730ae48bc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3party">
+      <UniqueIdentifier>{a1257edc-ac0c-4b7b-a555-a6f5b15117a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3party\png">
+      <UniqueIdentifier>{a611cbac-ff0f-4fcb-b763-dbdf71cc6cbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3party\jpeg">
+      <UniqueIdentifier>{6a37cc77-353e-440c-bdc2-b1c1d1b1e5ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3party\xxhash">
+      <UniqueIdentifier>{de52ae46-76bc-4c3d-8982-32018122f5ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3party\tinyxml">
+      <UniqueIdentifier>{6cca21a4-3203-445e-b2c6-f6c88ffc3827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{f4e2c168-9ec6-4006-b1a8-3c03f3217079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3party\freetype">
+      <UniqueIdentifier>{f32b91bd-8da4-45f6-adf5-3cdcad71052b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base\Ref.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\AutoReleeasePool.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Application.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Director.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Node.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Scheduler.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\GLView.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\Sprite.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="render\Image.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\Texture2D.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\TextureCache.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\Scene.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="math\Math.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Vec2.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\Action.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\MoveTo.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\ActionMgr.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\ScaleTo.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\MoveBy.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\ScaleBy.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="3party\xxhash\xxhash.c">
+      <Filter>3party\xxhash</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\FadeIn.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\FadeOut.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\CallFunc.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="3party\tinyxml\tinystr.cpp">
+      <Filter>3party\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="3party\tinyxml\tinyxml.cpp">
+      <Filter>3party\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="3party\tinyxml\tinyxmlerror.cpp">
+      <Filter>3party\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="3party\tinyxml\tinyxmlparser.cpp">
+      <Filter>3party\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="base\PlayerSave.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\EventDispatcher.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\Button.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\Text.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\RotationTo.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\RotationBy.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\Sequence.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\Animation.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\AudioEngine.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="2d\AnimationCache.cpp">
+      <Filter>2d</Filter>
+    </ClCompile>
+    <ClCompile Include="Lite2D.cpp" />
+    <ClCompile Include="network\HttpRequest.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\HttpClient.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\HttpRespone.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="render\RenderCmd.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\RenderCmdQueue.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base\Ref.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\AutoReleeasePool.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Application.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Director.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Node.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="Lite2D.h" />
+    <ClInclude Include="Macros.h" />
+    <ClInclude Include="base\Scheduler.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\GLView.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\Sprite.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="render\Image.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="render\Texture2D.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="render\TextureCache.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\Scene.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Math.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Vec2.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\ActionMgr.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\MoveTo.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\Action.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\ScaleTo.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\MoveBy.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\ScaleBy.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\png\png.h">
+      <Filter>3party\png</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\png\pngconf.h">
+      <Filter>3party\png</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\jpeg\jpeglib.h">
+      <Filter>3party\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\jpeg\jmorecfg.h">
+      <Filter>3party\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\jpeg\jconfig.h">
+      <Filter>3party\jpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\png\zlib.h">
+      <Filter>3party\png</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\xxhash\xxhash.h">
+      <Filter>3party\xxhash</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\png\zconf.h">
+      <Filter>3party\png</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\3party.h">
+      <Filter>3party</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\FadeIn.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\FadeOut.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\CallFunc.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\tinyxml\tinystr.h">
+      <Filter>3party\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\tinyxml\tinyxml.h">
+      <Filter>3party\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="base\PlayerSave.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\EventDispatcher.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\Button.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\ft2build.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\Text.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\RotationTo.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\RotationBy.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\Sequence.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\Animation.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\AudioEngine.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="2d\AnimationCache.h">
+      <Filter>2d</Filter>
+    </ClInclude>
+    <ClInclude Include="network\HttpRequest.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\HttpClient.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\HttpRespone.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="3party\freetype2\freetype\freetype.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftadvanc.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftautoh.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftbbox.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftbdf.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftbitmap.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftbzip2.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftcache.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftcffdrv.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftchapters.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftcid.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\fterrdef.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\fterrors.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftgasp.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftglyph.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftgxval.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftgzip.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftimage.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftincrem.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftlcdfil.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftlist.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftlzw.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftmac.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftmm.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftmodapi.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftmoderr.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftotval.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftoutln.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftpfr.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftrender.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftsizes.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftsnames.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftstroke.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftsynth.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftsystem.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\fttrigon.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftttdrv.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\fttypes.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftwinfnt.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ftxf86.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\t1tables.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ttnameid.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\tttables.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\tttags.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="3party\freetype2\freetype\ttunpat.h">
+      <Filter>3party\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="render\RenderCmd.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="render\RenderCmdQueue.h">
+      <Filter>render</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libpng.lib">
+      <Filter>3party\png</Filter>
+    </Library>
+    <Library Include="libzlib.lib">
+      <Filter>3party\png</Filter>
+    </Library>
+    <Library Include="libjpeg.lib">
+      <Filter>3party\jpeg</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="3party\png\zlib1.dll">
+      <Filter>3party\png</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Lite2D.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
